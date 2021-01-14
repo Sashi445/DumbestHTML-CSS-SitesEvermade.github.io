@@ -1,0 +1,38 @@
+body{
+    font-family: 'Roboto';
+    background-color: #eff7e1;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    margin: 0px;
+    text-align: center;
+    background-color: #214151;
+    color: white;
+    height: 100px;
+    width: 100%;
+}
+
+header h1{
+    padding: 30px;
+    margin: 0px;
+}
+
+.flexbox{
+    display: flex;
+    align-items: stretch;
+}
+
+.navSection{
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #a2d0c1;
+    flex-basis: 20%;
+}
+
+.bodySection{
+    flex-grow: 4;
+    flex-basis: 70%;
+    padding: 20px;
+}
