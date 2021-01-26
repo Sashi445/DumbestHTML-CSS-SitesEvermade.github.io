@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+  padding : 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color:#f4f5db;
+}
+
+.appBar {
+  height: 10vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #222831;
+  color: white;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.appBarItem {
+  flex-grow: 1;
+  padding: 0px 20px;
+  height: auto;
+}
+
+.appBarItem h2{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navItem a{
+  text-decoration: none;
+  color: white;
+}
+
+.navItem a:hover{
+  color: grey;
+}
+
+.container {
+  padding: 10px;
+  margin: 0px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.navItem {
+  padding: 3px;
+}
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rowItem {
+  flex-grow: 1;
+  background-color: white;
+  margin: 3px;
+  padding: 5px;
+  flex-basis: 300px;
+  border-radius: 5px;
+}
+
+.columnItem {
+  border-radius: 5px;
+  flex-grow: 1;
+  background-color: white;
+  margin: 3px;
+  padding: 5px;
+  flex-basis: 100px;
+}
+
+.floatingButton {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.circularBorderedbutton {
+  padding: 15px 40px;
+  border-radius: 100px;
+  background-color: yellow;
+  border: 0px yellow;
+  outline: none;
+  cursor: pointer;
+}
+
+.mainBody {
+  margin-top: 12vh;
+  height: 100vh;
+}
+.burger{
+  display: none;
+}
+
+.burger div{
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+  background-color: white;
+  transition: all 0.1s ease;
+}
+
+
+/* :nth-child() */
+
+@media screen and (max-width: 768px){
+  
+  .navBar{
+    position: absolute;
+    left: 0px;
+    height: 92vh;
+    width: 50%;
+    top: 8vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #222831;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navItem{
+    margin: 20px 0px;
+    opacity: 0;
+  }
+
+  .burger{
+    display: block;
+    margin: 0px 10px;
+    cursor: pointer;
+  }
+
+}
+
+.cross .item1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.cross .item2{
+  opacity: 0;
+}
+
+.cross .item3{
+  transform: rotate(45deg) translate(-5px, -6px); 
+}
+
+.navBarActive{
+  transform: translateX(0);
+}
+
+@keyframes navItemFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

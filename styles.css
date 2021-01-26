@@ -27,7 +27,7 @@ a{
 }
 
 main{
-    padding: 10px;
+    padding-bottom: 100px;
 }
 
 .intro{
@@ -54,4 +54,16 @@ main{
     background-color: white;
     border-radius: 10px;
 }
+
+.flexbox{
+    display: flex;  
+    flex-flow: wrap;
+}
+
+.flexItem{
+    flex-basis: 450px;
+    margin: 15px 10px;
+}
+
+
 
