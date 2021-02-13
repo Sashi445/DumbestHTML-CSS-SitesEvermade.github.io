@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    flex-direction: column;
+    background-color: #fb743e;
+}
+
+header h1{
+    color: white;
+    margin: 20px;
+}
+
+.add_note_button{
+    background-color: #383e56;
+    color: white;
+    border: none;
+}
+
+.add_note_button:hover{
+        background-color: white;
+        color: #383e56;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+form input{
+    width: 60%;
+}
+
+form button i{
+    font-size: 20px;
+    width: 30px;
+}
+
+form input, form button{
+    padding: 10px 5px;
+    font-size: 20px;
+}
+
+.todos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    
+}
+
+.todo_item{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    border: 1px solid #383e56;
+    border-left: 10px solid #383e56;
+}
+
+.todo_item li{
+    flex: 1;
+}
+
+main{
+    min-height: 65vh;
+    background-color: #c5d7bd;
+}
+
+footer{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #383e56;
+    color: white;
+}
+
+.social{
+    margin: 15px;
+}
+
+.check, .trash{
+    padding: 10px 12px;
+    margin: 2px;
+    font-size: 15px;
+    border: none;
+}
+
+.todo_input:focus{
+    background-color: whitesmoke;
+}
+
+.todo_item p{
+    flex: 1;
+    margin: 10px;
+}
+
+.check{
+    background-color: red;
+    color: white;
+}
+
+.trash{
+    background-color: green;
+    color: white;
+}
+
+.social a{
+    margin: 0px 10px;
+}
+
+.social a i{
+    font-size: 30px;
+    color: white;
+}
+
+@media only screen and (max-width: 760px){
+    .todo_item{
+        width: 90%;
+        padding: 10px;
+    }
+
+    form input{
+        width: 80%;
+    }
+
+    .todo_item p{
+        width: 100%;
+    }
+}
