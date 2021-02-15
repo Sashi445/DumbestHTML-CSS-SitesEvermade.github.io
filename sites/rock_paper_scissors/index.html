@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <header>
+        <h1>Rock-Paper-Scissors</h1>
+        <div class="scoreboard">
+            <div class="player-score">
+                <h3>Player Score</h3>
+                <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h3>Computer Score</h3>
+                <p>0</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <h3>Let's Start the game!!</h3>
+            <button type="button"  class="startGame">Play Game</button>
+        </div>
+        <div class="game fadeOut">
+            <div class="info">
+                <h2>Choose an option!!</h2>
+            </div>
+            <div class="hands">
+                <div class="player-hand">
+                    <img src="./assets/hand.png" alt="">
+                </div>
+                <div class="computer-hand">
+                    <img src="./assets/hand.png" alt="">
+                </div>
+            </div>
+            <div class="options">
+                <button>rock</button>
+                <button>paper</button>
+                <button>scissors</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Made with  <i class="fas fa-heart" style="color: red;"></i></h3>
+        <div class="social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

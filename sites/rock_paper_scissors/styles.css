@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-color: #ffea00;
+}
+
+header{
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    font-family: 'Staatliches', cursive;
+}
+
+main{
+    min-height: 60vh;
+}
+
+footer{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.options button{
+    margin: 0px 10px;
+}
+
+button{
+    border: none;
+    background-color: #0015FF;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.scoreboard{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-score p, .computer-score p{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.hands{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player-hand{
+    transform: rotateY(180deg);
+}
+
+.social{
+    margin: 20px;
+}
+
+.social a i{
+    font-size: 30px;
+    color: white;
+}
+
+.social a{
+    margin: 0px 10px;
+}
+
+
+div.fadeOut{
+    opacity: 0;
+}
+
+div.fadeIn{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 500px){
+    .player-hand img, .computer-hand img{
+        width: 200px;
+    }
+
+    button{
+        padding: 9px 13px;
+    }
+
+    .options button{
+        margin: 0px 7px;
+    }
+
+    header h1{
+        font-size: 25px;
+    }
+}
