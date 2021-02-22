@@ -4,6 +4,24 @@ const preview = document.querySelector(".preview");
 
 const downloadButton = document.querySelector(".download");
 
+const burger = document.querySelector('.burger');
+
+const navBar = document.querySelector('header nav');
+
+burger.addEventListener('click', () => {
+  navBar.classList.add('open')
+  burger.classList.add('cross')
+  console.log('Clicked Me!!')
+})
+
+const navItems = navBar.querySelectorAll('a').forEach((e) => {
+  e.addEventListener('click', ()=>{
+    navBar.className = ''
+    burger.className = 'burger'
+  })
+})
+
+
 const converter = new showdown.Converter({
   extensions: ["table"],
 });
@@ -42,7 +60,13 @@ downloadButton.addEventListener("click", () => {
 });
 
 function downloadHtmlFile() {
-  let doc = document.implementation.createHTMLDocument("Document");
+
+  const titleInput = document.querySelector('.title')
+
+  let title  = titleInput.value ? titleInput.value : "Document"
+
+  let doc = document.implementation.createHTMLDocument(title);
+
   doc.head.innerHTML +=
     '<link rel="stylesheet" href="https://res.cloudinary.com/dcjfrnxqn/raw/upload/v1613992932/lesscode_kfmptw.css">';
   let docPreview = document.createElement("div");

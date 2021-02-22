@@ -9,28 +9,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
-        <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
     <title>Code Less!!</title>
 </head>
 
 <body>
     <header>
-        <h1>CodeLess</h1>
+        <div class="logo">
+            <h1>CodeLess</h1>
+        </div>
+        <div class="burger">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+        </div>
         <nav>
-            <a href="">About</a>
-            <a href="">Contribute</a>
+            <a href="#about">About</a>
+            <a href="https://github.com/Sashi445/DumbestHTML-CSS-SitesEvermade.github.io/tree/master/sites/lesscode" target="blank">Contribute</a>
         </nav>
     </header>
     <main>
+        <div class="top_heading">
+            <h2>Convert your <span class="code"><a href="https://www.markdownguide.org/" target="blank">Markdown</a></span> to <span class="code">HTML</span></h2>
+        </div>
         <div class="wrapper">
             <div class="editor">
-                <div class="edit_buttons">
-                    <button class="heading1"><i class="fas fa-heading"></i></button>
-                    <button class="bold"><i class="fas fa-bold"></i></button>
-                    <button class="italic"><i class="fas fa-italic"></i></button>
-                    <button class="link"><i class="fas fa-link"></i></button>
-                    <button class="image"><i class="far fa-image"></i></button>
+                <div>
+                    <input type="text" class="title" placeholder="Enter your title here!!">
+                    <div class="edit_buttons">
+                        <button class="heading1"><i class="fas fa-heading"></i></button>
+                        <button class="bold"><i class="fas fa-bold"></i></button>
+                        <button class="italic"><i class="fas fa-italic"></i></button>
+                        <button class="link"><i class="fas fa-link"></i></button>
+                        <button class="image"><i class="far fa-image"></i></button>
+                    </div>
                 </div>
                 <textarea class="text_editor"></textarea>
             </div>
@@ -43,8 +55,19 @@
                 </div>
             </div>
         </div>
+        <div id="about" class="about">
+            <h2>About</h2>
+            <p>Hello, Folks!! Codeless is a kind of static site generator it converts markdown to HTML and allows you to download the converted HTML with some default styles. Codeless uses the <a href="https://guides.github.com/features/mastering-markdown/" target="blank">github</a> markdown flavour. So all you have to do is enter your markdown in the editor above and preview the HTML in the preview tab and that's it done you can download the HTML file!!.
+                Under the hood we use the <span><a href="https://github.com/showdownjs/showdown" target="blank">showdown.js</a></span>(an open source JS library) to convert <span>markdown</span> to HTML. So, the project is beginner-friendly so feel free to contribute. Hope you all <i class="fas fa-heart" style="color: red;"></i> this!!
+            </p>
+        </div>
     </main>
     <footer>
+        <p>Made with<a href="https://craftedl1.netlify.app/#/">Crafted</a></p>
+        <div class="social">
+            <a href="https://github.com/Sashi445/DumbestHTML-CSS-SitesEvermade.github.io/tree/master/sites/lesscode" target="blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/crafted_io/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown-table@1.0.1/dist/showdown-table.min.js"></script>
