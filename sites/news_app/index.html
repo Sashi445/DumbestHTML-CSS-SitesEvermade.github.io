@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>News App</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <h3>Covid Tracker</h3>
+              <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div id="dashboard">
+            <div id="lastUpdated">
+            </div>
+            <div id="totalCases">   
+            </div>
+            <h3>Current Statistics</h3>
+            <div class="flex_box">
+                <div id="activeCases"  class="card text-dark bg-warning mb-3">
+
+                </div>
+                <div id="recovered" class="card text-white bg-success mb-3">
+    
+                </div>
+                <div id="deaths" class="card text-white bg-danger mb-3"> 
+    
+                </div>
+            </div>
+            <h3>Latest Statistics</h3>
+            <div class="flex_box">
+                <div id="activeCasesNew" class="card text-dark bg-primary mb-3">
+
+                </div>
+                <div id="recoveredNew" class="card text-white bg-success mb-3">
+    
+                </div>
+                <div id="deathsNew" class="card text-white bg-danger mb-3">
+    
+                </div>
+            </div>
+        </div>
+        <div id="states">
+            <h3>State Wise Stats</h3>
+            <div id="states_data" class="flex_box">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
